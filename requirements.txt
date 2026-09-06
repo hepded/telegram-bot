@@ -1,0 +1,6 @@
+aiogram
+python-dotenv
+sentence-transformers
+scikit-learn
+torch
+requests
