@@ -120,27 +120,4 @@ python scripts/populate_database.py --type film "The Matrix" "Fight Club"
 - `scripts/populate_database.py` — наполнение базы.
 - `.env.example` — шаблон переменных окружения без секретов.
 
-## Проверка перед публикацией
-
-```bash
-python -m compileall -q app scripts run.py
-python scripts/populate_database.py --help
-```
-
-Эти команды проверяют синтаксис и запуск CLI. Полную работу рекомендаций проверяй вручную после установки зависимостей и настройки токена.
-
-## Публикация на GitHub
-
-Git-репозиторий уже инициализирован с веткой `main`. Создай пустой репозиторий на GitHub (без README, .gitignore и лицензии), затем выполни из корня проекта:
-
-```bash
-git add .
-git diff --cached --stat
-git diff --cached
-# После просмотра подготовленных файлов:
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-
-Замени `YOUR_USERNAME` и `YOUR_REPOSITORY` своими значениями. `.gitignore` исключает секреты, виртуальное окружение, кэш, резервные копии и локальные материалы перевода PDF. Эти файлы остаются на компьютере.
+виртуальное окружение, кэш, резервные копии и локальные материалы перевода PDF. Эти файлы остаются на компьютере.
